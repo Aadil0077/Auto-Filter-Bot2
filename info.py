@@ -18,31 +18,31 @@ def is_enabled(value, default):
         return default
 
 #main variables
-API_ID = int(environ.get('API_ID', ''))
-API_HASH = environ.get('API_HASH', '')
+API_ID = int(environ.get('API_ID', '10110297'))
+API_HASH = environ.get('API_HASH', '45c5a500e21ddb2cec451b1e2670f4a5')
 BOT_TOKEN = environ.get('BOT_TOKEN', '')
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '851199369').split()]
 USERNAME = environ.get('USERNAME', 'https://telegram.me/TechifyGuru')
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', ''))
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '').split()]
-DATABASE_URI = environ.get('DATABASE_URI', "")
-DATABASE_URI2 = environ.get('DATABASE_URI2', "")
-DATABASE_NAME = environ.get('DATABASE_NAME', "Rahul")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Rahul')
-LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', ''))
-QR_CODE = environ.get('QR_CODE', 'https://envs.sh/wam.jpg')
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002019824318'))
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002131762945').split()]
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://MovieHub:MovieHub@moviehub.wc2kpzb.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_URI2 = environ.get('DATABASE_URI2', "0")
+DATABASE_NAME = environ.get('DATABASE_NAME', "MovieHub")
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Hub_Files')
+LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1002019824318'))
+QR_CODE = environ.get('QR_CODE', 'https://envs.sh/m.jpg')
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 
 #this vars is for when heroku or koyeb acc get banned, then change this vars as your file to link bot name
-BIN_CHANNEL = int(environ.get('BIN_CHANNEL', ''))
+BIN_CHANNEL = int(environ.get('BIN_CHANNEL', '-1002019824318'))
 URL = environ.get('URL', '')
 
 # verify system vars
-IS_VERIFY = is_enabled('IS_VERIFY', True)
-LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', ''))
-TUTORIAL = environ.get("TUTORIAL", "https://youtu.be/0c-i2Lol6LU")
-TUTORIAL2 = environ.get("TUTORIAL2", "https://youtu.be/GdaUbzxDTKs")
-TUTORIAL3 = environ.get("TUTORIAL3", "https://youtu.be/rddlpYLm0G0")
+IS_VERIFY = is_enabled('IS_VERIFY', False)
+LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '-1002019824318'))
+TUTORIAL = environ.get("TUTORIAL", "https://youtu.be/0c-i2Lo6LU")
+TUTORIAL2 = environ.get("TUTORIAL2", "https://youtu.be/GdaUbxDTKs")
+TUTORIAL3 = environ.get("TUTORIAL3", "https://youtu.be/rddlYLm0G0")
 VERIFY_IMG = environ.get("VERIFY_IMG", "https://graph.org/file/45a270fc6a0a1c183c614.jpg")
 SHORTENER_API = environ.get("SHORTENER_API", "8c09653e5c38f84d1b76ad3197c5a023e53b494d")
 SHORTENER_WEBSITE = environ.get("SHORTENER_WEBSITE", "onepagelink.in")
@@ -56,9 +56,9 @@ THREE_VERIFY_GAP = int(environ.get('THREE_VERIFY_GAP', "21600"))
 # languages search
 LANGUAGES = ["hindi", "english", "telugu", "tamil", "kannada", "malayalam"]
 
-auth_channel = environ.get('AUTH_CHANNEL', '')
+auth_channel = environ.get('AUTH_CHANNEL', '-1001999281293')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
-SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', ''))
+SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', '-1002142077714'))
 
 # bot settings
 AUTO_FILTER = is_enabled('AUTO_FILTER', True)
@@ -73,4 +73,4 @@ LONG_IMDB_DESCRIPTION = is_enabled('LONG_IMDB_DESCRIPTION', False)
 PROTECT_CONTENT = is_enabled('PROTECT_CONTENT', False)
 SPELL_CHECK = is_enabled('SPELL_CHECK', True)
 LINK_MODE = is_enabled('LINK_MODE', True)
-PM_SEARCH = is_enabled('PM_SEARCH', False)
+PM_SEARCH = is_enabled('PM_SEARCH', True)
