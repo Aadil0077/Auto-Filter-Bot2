@@ -26,7 +26,7 @@ USERNAME = environ.get('USERNAME', 'https://telegram.me/TechifyGuru')
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002019824318'))
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002131762945').split()]
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://MovieHub:MovieHub@moviehub.wc2kpzb.mongodb.net/?retryWrites=true&w=majority")
-DATABASE_URI2 = environ.get('DATABASE_URI2', "0")
+DATABASE_URI2 = environ.get('DATABASE_URI2', "mongodb+srv://MovieHub:MovieHub@moviehub.wc2kpzb.mongodb.net/?retryWrites=true&w=majority")
 DATABASE_NAME = environ.get('DATABASE_NAME', "MovieHub")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Hub_Files')
 LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1002019824318'))
